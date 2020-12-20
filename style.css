@@ -1,13 +1,26 @@
 body {
 	background: #242B33;
 	margin: 0;
-	border: 1px solid green;
 }
 
-.block_header {
+.content {
+	margin: 0 auto;
+	padding-inline: 30px;
+	background-image: url("./img/bcgr/back.png");
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
+}
+
+.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -15,7 +28,9 @@ body {
 }
 
 .menu {
-	width: 1110px;
+	padding-top: 30px;
+	max-width: 1110px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -33,25 +48,6 @@ body {
 	line-height: 16px;
 	letter-spacing: 0.05em;
 	color: #FFFFFF;
-}
-
-.content {
-	max-height: 840px;
-	background-image: url("./img/bcgr/back.png");
-	background-position: center;
-	background-size: auto;
-	background-repeat: no-repeat;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.content img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .content_text {
@@ -73,7 +69,7 @@ body {
 }
 
 .content_contacts {
-	margin-top: 200px;
+	margin-top: 150px;
 	width: 582px;
 	display: flex;
 	justify-content: space-between;
@@ -101,7 +97,6 @@ body {
 }
 
 .block_icons {
-
 	max-width: 794px;
   display: flex;
   justify-content: space-between;
@@ -147,7 +142,6 @@ body {
 }
 
 .photo {
-	background-image: url("./img/icons/photo1.png");
 	float: left;
 	width: 50%;
 	padding: 10px;
